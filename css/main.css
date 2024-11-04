@@ -1,0 +1,222 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Onest:wght@100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+:root {
+  --red: #E31D1D;
+  --blue: #2B61C0;
+  --white: #FFF;
+  --black: #000;
+  --gray: #302e29;
+  --font-family: "Onest", sans-serif;
+  --second-family: "Inter", sans-serif;
+}
+
+html, body {
+  font-family: var(--font-family);
+}
+
+.uk-button,
+.uk-navbar-nav > li > a {
+  text-transform: none;
+  font-family: var(--font-family);
+}
+
+.uk-button-link:hover {
+  color: #90b6ff;
+}
+
+.uk-margin label {
+  font-family: var(--second-family);
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.top-info {
+  background-color: var(--blue);
+}
+
+.top-info-color {
+  color: var(--white);
+}
+
+.uk-button-link:hover {
+  color: #90b6ff;
+}
+
+.top-info-font {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.top-info-font-right {
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.header-button {
+  background: var(--red);
+  color: var(--white);
+  font-size: 14px;
+}
+
+.line-4 {
+  width: 10px;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.uk-navbar-toggle-icon svg {
+  width: 24px;
+  fill: #212325;
+}
+
+.hero-title {
+  color: var(--white);
+  font-size: 48px;
+  line-height: 117%;
+}
+
+.hero-txt {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 133%;
+}
+
+.hero-button {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+}
+.hero-button:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.uk-inline input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.uk-inline input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.uk-inline input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.uk-inline input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.uk-inline input::placeholder {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.uk-margin .uk-form-label {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.uk-card-body p {
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.uk-card-body .uk-card-title {
+  font-family: var(--font-family);
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--gray);
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>dits-service</title>
+</head>
+
+<body>
+
+    <!-- top-info -->
+    <section class="top-info top-info-color uk-section uk-section-default uk-padding-small">
+        <div class="uk-container">
+
+            <div class="uk-flex uk-flex-between">
+
+                <div class="uk-inline uk-flex">
+                    <button class="top-info-font uk-button uk-button-link top-info-color uk-text-bold uk-inline"
+                        type="button">
+                        <img src="/img/location.svg" width="20" height="20" uk-svg>
+                        5 автосервисов <span class="uk-visible@m">в Минске</span>
+                        <img src="./img/chevron-down.svg" width="12" height="12" uk-svg>
+                    </button>
+
+                    <div uk-dropdown="mode: click">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li><a class="uk-text-emphasis" href="#">Автосервис в Минске</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Автосервис в Минске</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Автосервис в Минске</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Автосервис в Минске</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Автосервис в Минске</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="uk-flex uk-flex-between">
+
+                    <div class="top-info-font-right uk-inline uk-flex uk-visible@m">
+                        <p class="uk-margin-remove uk-text-bold uk-flex">
+                            <img src="/img/clock.svg" width="20" height="20" style="margin-right: 5px;" uk-svg>
+                            c 9:00 до 22:00
+                        </p>
+                    </div>
+
+                    <div class="uk-inline uk-flex uk-margin-left">
+                        <button
+                            class="top-info-font-right uk-button uk-button-link top-info-color uk-text-bold uk-inline"
+                            type="button">
+                            <img src="/img/call.svg" width="20" height="20" uk-svg>
+                            +375 (29) 113-50-55
+                            <img src="./img/chevron-down.svg" width="12" height="12" uk-svg>
+                        </button>
+                        <div uk-dropdown="mode: click">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li><a class="uk-text-emphasis" href="#">+375 (29) 113-50-55</a></li>
+                                <li><a class="uk-text-emphasis" href="#">+375 (29) 113-50-55</a></li>
+                                <li><a class="uk-text-emphasis" href="#">+375 (29) 113-50-55</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- header -->
+    <header class="header uk-section uk-section-default uk-padding-remove">
+        <div class="uk-container">
+
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-flex-none" href="#!" aria-label="Back to Home">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="uk-navbar-right uk-visible@m">
+                    <ul class="uk-navbar-nav uk-text-emphasis" style="gap: 24px;">
+                        <li><a class="uk-text-emphasis" href="#">Главная</a></li>
+                        <li><a class="uk-text-emphasis" href="#">Услуги</a></li>
+                        <li><a class="uk-text-emphasis" href="#">Цены</a></li>
+                        <li><a class="uk-text-emphasis" href="#">Опт</a></li>
+                        <li><a class="uk-text-emphasis" href="#">Гарантия</a></li>
+                        <li><a class="uk-text-emphasis" href="#">Вакансии</a></li>
+                        <li><a class="uk-text-emphasis" href="#">Контакты</a></li>
+                    </ul>
+
+                    <button
+                        class="header-button uk-button uk-button-default uk-border-rounded uk-text-bold uk-visible@m">Заказать
+                        звонок</button>
+                </div>
+                
+                <!-- mobile-nav -->
+                <div class="uk-navbar-right uk-hidden@m">
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a class="uk-text-emphasis" href="#">Главная</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Услуги</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Цены</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Опт</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Гарантия</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Вакансии</a></li>
+                            <li><a class="uk-text-emphasis" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- hero -->
+    <section class="uk-section uk-padding-remove uk-background-cover" style="background-image: url(./img/bg.jpg)">
+        <div class="uk-container">
+
+            <div class="uk-child-width-expand@s uk-flex uk-flex-center uk-flex-middle" uk-grid style="height: 560px;">
+                <div>
+                    <span class="uk-label uk-text-bold uk-border-rounded"
+                        style="padding: 2px; background: var(--red); font-size: 24px;">&nbsp;&nbsp;за 1
+                        час&nbsp;&nbsp;</span>
+
+                    <h1 class="hero-title uk-text-bold uk-margin-remove-top uk-margin-remove-bottom">Замена автостекла
+                    </h1>
+                    <p class="hero-txt uk-text-bold uk-margin-remove-top">с гарантией на выполненные работы</p>
+                    <div class="uk-card" uk-grid>
+                        <div class="uk-card uk-width-auto@s">
+                            <button
+                                class="hero-button uk-button uk-button-default uk-border-rounded uk-text-bold uk-width-auto@s"
+                                style="padding: 7px 30px;">Заказать замену</button>
+                        </div>
+                    </div>
+                </div />
+            </div>
+        </div>
+    </section>
+
+    <!-- filter -->
+    <section class="filter uk-section uk-section-default ">
+        <div class="uk-container">
+
+            <form class="uk-form-stacked uk-background-default uk-padding uk-box-shadow-large uk-position-z-index"
+                style="border-radius: 24px; margin-top: -135px;">
+                <fieldset class="uk-fieldset">
+
+                    <div class="uk-child-width-expand@s uk-text-left" uk-grid>
+                        <div uk-form-custom="target: > * > span:first-child" style="display: flex; width: 100%;">
+                            <select aria-label="Custom controls">
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                                <option value="4">Option 04</option>
+                            </select>
+                            <div class="uk-inline  uk-width-1-1">
+                                <a class="uk-form-icon uk-form-icon-flip " href="#" uk-icon="icon: chevron-down"></a>
+                                <input class="uk-input uk-border-rounded uk-form-large" type="text"
+                                    aria-label="Clickable icon" placeholder="Марка">
+                            </div>
+                        </div>
+
+
+                        <div uk-form-custom="target: > * > span:first-child" style="display: flex; width: 100%;">
+                            <select aria-label="Custom controls">
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                                <option value="4">Option 04</option>
+                            </select>
+                            <div class="uk-inline  uk-width-1-1">
+                                <a class="uk-form-icon uk-form-icon-flip " href="#" uk-icon="icon: chevron-down"></a>
+                                <input class="uk-input uk-border-rounded uk-form-large" type="text"
+                                    aria-label="Clickable icon" placeholder="Модель">
+                            </div>
+                        </div>
+
+
+                        <div uk-form-custom="target: > * > span:first-child" style="display: flex; width: 100%;">
+                            <select aria-label="Custom controls">
+                                <option value="1">Option 01</option>
+                                <option value="2">Option 02</option>
+                                <option value="3">Option 03</option>
+                                <option value="4">Option 04</option>
+                            </select>
+                            <div class="uk-inline  uk-width-1-1">
+                                <a class="uk-form-icon uk-form-icon-flip " href="#" uk-icon="icon: chevron-down"></a>
+                                <input class="uk-input uk-border-rounded uk-form-large" type="text"
+                                    aria-label="Clickable icon" placeholder="Поколение">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="uk-child-width-expand@s uk-text-left" uk-grid>
+                        <div>
+                            <div class="">
+                                <div class="uk-margin">
+                                    <div class="uk-form-label uk-margin-bottom uk-text-bold">Тип стекла</div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox" checked>
+                                            Лобовое(14200)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox">
+                                            Правое(1769)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox">
+                                            Левое(1637)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox">
+                                            Заднее(1100)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox">
+                                            Плоское(28)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="">
+                                <div class="uk-margin">
+                                    <div class="uk-form-label uk-margin-bottom uk-text-bold">Опции</div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox" checked>
+                                            Солнцезащитная полоса
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> Антенна(317)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> Датчик
+                                            дождя(1636)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> Камера(211)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> Обогрев
+                                            стекла(709)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> Окно под
+                                            VIN(3921)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="">
+                                <div class="uk-margin">
+                                    <div class="uk-form-label uk-margin-bottom uk-text-bold">Производитель</div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox" checked>
+                                            Лобовое(14200)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> KMK
+                                            (Эконом)(2676)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> XYG
+                                            (Эконом)(3654)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> Benson
+                                            (Бизнес)(426)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> FYG
+                                            (Бизнес)(645)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> NordGlass
+                                            (Бизнес)(2104)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> AGC
+                                            (Премиум)(104)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> PIlkIngton
+                                            (Премиум)(695)
+                                        </label>
+                                    </div>
+                                    <div class="uk-margin-small-top">
+                                        <label>
+                                            <input class="uk-checkbox uk-border-rounded" type="checkbox"> Sekurit
+                                            (Премиум)(1791)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-card" uk-grid>
+                        <div class="uk-card uk-width-auto@s">
+                            <button
+                                class="header-button uk-button uk-button-default uk-border-rounded uk-text-bold uk-width-auto@s"
+                                style="padding: 7px 30px;">Побобрать автостекло
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <!-- news -->
+    <section class="uk-section uk-section-default">
+        <div class="uk-container">
+
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-expand uk-margin uk-overflow-hidden"
+                style="border-radius: 24px; border: 1px solid #ebebeb;" uk-grid>
+                <div class="uk-card-media-left uk-cover-container uk-width-2-5@s">
+                    <img src="./img/news-img.jpg" alt="" uk-cover>
+                    <canvas width="440" height="284"></canvas>
+                </div>
+                <div class="uk-width-3-5@s">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title uk-text-bold">Специальное предложение</h3>
+                        <p>С 1 по 31 октября при ремонте (замене) автостекла скидка -15% для автомобилей такси и служб
+                            доставки!</p>
+                        <div class="uk-card" uk-grid>
+                            <div class="uk-card uk-width-auto@s">
+                                <button
+                                    class="header-button uk-button uk-button-default uk-border-rounded uk-text-bold uk-width-auto@s"
+                                    style="padding: 7px 30px;">Подробнее
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.13/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
